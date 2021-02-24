@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_24_141327) do
+ActiveRecord::Schema.define(version: 2021_02_24_141919) do
 
   create_table "flats", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_141327) do
     t.integer "number_of_guests"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "img", default: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Missing-image-232x150.png"
   end
 
 end
